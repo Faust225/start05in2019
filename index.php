@@ -17,14 +17,7 @@ $panos = [
     ]
 ];
 
-foreach ($panos as $pana) {
-    foreach ($pana as $charakteris => $bruozai) {
-
-        if ($pana['protinga'] == true) {
-            print $charakteris . " $bruozai ";
-        }
-    }
-}
+print $panos[rand(0, 2)]['vardas'];
 ?>
 <!DOCTYPE html> 
 <html> 
