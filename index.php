@@ -1,4 +1,5 @@
 <?php
+
 $panos = [
     [
         'vardas' => 'Augustina',
@@ -17,7 +18,20 @@ $panos = [
     ]
 ];
 
-print $panos[rand(0, 2)]['vardas'];
+$grazios = 0;
+$visos_panos = 0;
+
+foreach($panos as $pana) {
+    
+    if($pana['grazi'] == true) {
+        $grazios++;
+    }
+    $visos_panos++;
+}
+
+$grazios_proc = round($grazios * 100 / $visos_panos);
+
+print $grazios_proc . "<br> is viso $visos_panos, o is graziu $grazios ";
 ?>
 <!DOCTYPE html> 
 <html> 
